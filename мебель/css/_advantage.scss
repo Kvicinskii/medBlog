@@ -1,0 +1,89 @@
+.conteiner{
+    width: 100%;
+    .scroll-to-top{
+       display: none; 
+        position: fixed;
+        right: 20px;
+        bottom: 2px;
+        z-index: 99;
+        border: none;
+        border-radius: 100px;
+    img{
+        padding-top: 5px;
+    }
+    } 
+    .show{
+        display: block;
+    }
+    .conteiner-wrap{
+        width: 82%;
+        margin: auto;
+        flex-direction: column;
+        h4{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.015em;
+            color: #414141;
+            text-align: center;
+            margin-top: 100px;
+            @include adaptiv-font(24,10);
+        }
+        .advantage{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 90px;
+            .block_of_advantages{
+                width: 48%;
+                padding-left: 95px;
+                margin-bottom: 80px;
+                height: 91px;
+                align-items: center;
+                h6{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    letter-spacing: 0.015em;
+                    color: #414141;
+                    @include adaptiv-font(18,10);
+                }
+                p{
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #686868;
+                    padding-top: 10px;
+                    @include adaptiv-font(15,10);
+                }
+            }
+            .price{
+                background-image: url(../img/profit.png);
+                background-repeat: no-repeat;
+                background-position: left;
+        
+            }
+            .deliveries{
+                background-image: url(../img/Vector.png);
+                background-repeat: no-repeat;
+                background-position: left; 
+            }
+            .time{
+                background-image: url(../img/time.png);
+                background-repeat: no-repeat;
+                background-position: left; 
+            }
+            .order{
+                background-image: url(../img/production.png);
+                background-repeat: no-repeat;
+                background-position: left; 
+            }
+        }
+    }
+}

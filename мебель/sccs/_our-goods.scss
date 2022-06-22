@@ -1,0 +1,211 @@
+$vw: 1/1400px*100vw;
+ .scroll-to-top{
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 2px;
+    z-index: 99;
+    border: none;
+    border-radius: 100px;
+} 
+.show{
+    display: block;
+}
+.conteiner_our-goods{
+    width: 81.42%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+    
+    .conteiner_our_goods-link{
+        width: 90%;
+        margin-bottom: 50px;
+        a{
+            font-size: 16px;
+            line-height: 19px;
+            color: #414141;
+            @include adaptiv-font(14,10);
+        }
+    }
+    .wrap{
+        width: 23.07%; 
+        height: 320px;
+        margin-bottom: 42px;
+        .product{
+            width: 100%;
+            height: 94%;
+            position: relative;
+            overflow: hidden;
+            .discounts-wishlist_icon{
+                display: flex;
+                justify-content: space-between;
+                .discounts{
+                    width: 15%;
+                    display: flex;
+                    text-align: center;
+                    justify-content: center;
+                    margin-top: 20px;
+                    margin-left: 15.5px;
+                    img{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        padding-right: 7px;
+                    }
+                }
+            }
+            
+            .wishlist-icon{
+                display: block;
+                margin-left: auto;
+                width: 10%;
+                margin-right: 15.5px;
+                margin-top: 20px;
+                
+                .icon{
+                    display: block;
+                    margin-left: auto;
+                }
+            }
+            .img{
+                
+                
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            .product-heading{
+                align-items: center;
+                .heading-text{
+                    width: 70%;
+                    margin: auto;
+                    margin-top: 54px;
+                    padding-bottom: 30px;
+                    h3{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 10px;
+                        color: #414141;
+                        @include adaptiv-font(14,10);
+                    }
+                    .text{
+                        font-size: 11px;
+                        line-height: 20px;
+                        color: #414141;
+                        opacity: 0.7;
+                        @include adaptiv-font(11,10);
+                    }
+                    p{
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 20px;
+                        color: #414141;
+                        @include adaptiv-font(14,10);
+                        span{
+                            color: #CCCCCC;
+                            font-size: 12px;
+                            line-height: 14px;
+                            text-decoration-line: line-through;
+                            margin-left: 6px;
+                            @include adaptiv-font(14,10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+    .product:hover{
+        background: #FFFFFF;
+        box-shadow: 0px 1px 9px  rgba(0, 0, 0, 0.11);
+        height: 488px;
+        z-index: 2;
+        
+       
+        .basket{
+            display:block;
+            width: 100%;
+            margin: auto;
+            position: absolute;
+            z-index: 2;
+            background: #FFFFFF;
+            
+            .basket-block{
+                width: 70%;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+
+            h6{
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 25px;
+                color: #414141;
+                @include adaptiv-font(14,10);
+            }
+            .dimensions{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+                margin: auto;
+                li{
+                    font-size: 9px;
+                    line-height: 11px;
+                    color: #C4C4C4;
+                    @include adaptiv-font(9,5);
+                }
+            }
+            .icon{
+                width: 45%;
+                margin: auto;
+                display: flex;
+                justify-content: space-between;
+                span{
+                    color: #414141;
+                    transform: rotate(45deg);
+                }
+            }
+            .numbers{
+                display: flex;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                list-style: none;
+                justify-content: space-between;
+                margin: auto;
+                li{
+                    font-size: 9px;
+                    line-height: 11px;
+                    color: #414141;
+                    @include adaptiv-font(14,10);
+                }
+            }
+            .link-bask{
+                width: 100%;
+                height: 40px;
+                background: #245462;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin: auto;
+                margin-top: 17px;
+                margin-bottom: 60px;
+                a{
+                    text-decoration: none;
+                    font-size: 13px;
+                    line-height: 15px;
+                    color: #FFFFFF;
+                    text-align: center;
+                    @include adaptiv-font(14,10);
+                    
+                }
+            }
+        }
+    } 
+}    

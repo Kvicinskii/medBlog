@@ -1,0 +1,241 @@
+$vw: 1/1440px*100vw;
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+
+.slider {
+    position: relative;
+    width: 83.5%;
+    height: 500px*$vw;
+    /* Чтобы во время перетаскивания слайда ничего не выделить внутри него */
+    user-select: none;
+    /* Чтобы запретить скролл страницы, если мы начали двигать слайдер по оси X */
+    touch-action: pan-y;
+    margin: auto;
+}
+
+/* Если где-то внутри слайдера будут изображения,
+то нужно задать им pointer-events: none,
+чтобы они не перетаскивались мышью */
+
+.slider img {
+    pointer-events: none;
+    width: 100%;
+    height: 100%;
+}
+
+.slide h1 {
+    max-width: 34vw;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px*$vw;
+    line-height: 130.3%;
+    text-transform: uppercase;
+    color: #3C3C3C;
+    background-color: transparent;
+    text-align: start;
+
+    position: relative;
+    bottom: 25vw;
+    left: 10vw;
+}
+.slide p {
+    margin-top: 15px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px*$vw;
+    color: #3C3C3C;
+    background-color: transparent;
+    text-align: start;
+    position: relative;
+    bottom: 25vw;
+    left: 10vw;
+    opacity: 0.8;
+}
+
+.slider_btn {
+    border: none;
+    width: 13.9944vw;
+    height: 4.027778vw;
+    position: relative;
+    bottom: 24.2222vw;
+    left: 10vw;
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.slider_btn:hover p {
+    color: #B2936D;
+    background-color: #fff;
+}
+
+/* .slider_btn:active p {
+    color: #B2936D;
+    background-color: #808080;
+} */
+
+.slider_btn p {
+    width: 13.9944vw;
+    height: 4.027778vw;
+    background-color: #fff;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px*$vw;
+    /* line-height: 2.7778vw; */
+    text-transform: uppercase;
+    color: #414141;
+    bottom:13px;
+    left: 0;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_btn div {
+    width: 4.618055vw;
+    height: 4.027778vw;
+    background-color: #444444;
+
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_btn:hover div {
+    background-color: #b6b6b6;
+}
+
+.btn_arrow img {
+    width: 0.9722vw;
+    height: 1.527778vw;
+    background-color: transparent;
+}
+
+.slide {
+    height: 62.152778vw;
+}
+
+
+
+
+.slider-list {
+    
+    height: inherit;
+    overflow: hidden;
+}
+
+.slider-list.grab {
+    cursor: grab;
+}
+
+.slider-list.grabbing {
+    cursor: grabbing;
+}
+
+.slider-track {
+    display: flex;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    /* Чтобы слайды не сжимались */
+    flex-shrink: 0;
+    /* Увеличиваем и центрируем цифру внутри слайда */
+}
+
+.slider-arrows {
+    width: 100%;
+    position: absolute;
+    bottom: 15vw;
+    padding: 0 17px*$vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.next,
+.prev {
+    background: rgba(157, 157, 157, 0.28);
+    border: none;
+    cursor: pointer;
+    width: 61px*$vw;
+    height: 60px*$vw;
+
+    img {
+        width: 20px;
+        height: auto;
+    }
+}
+
+.prev{
+    transform: rotate(-180deg);
+}
+
+.prev:hover{
+    transform: rotate(-180deg);
+}
+
+.next:hover,
+.prev:hover {
+    
+    background: #fff;
+    img{
+        background: rgba(157, 157, 157, 0.28);
+    }
+}
+
+.next.disabled,
+.prev.disabled {
+    opacity: .25;
+    pointer-events: none;
+}
+
+
+@media screen and (max-width: 960px) {
+    .slider-arrows{
+        display: none;
+    }
+    
+}

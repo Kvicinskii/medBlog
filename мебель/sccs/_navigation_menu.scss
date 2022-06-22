@@ -1,0 +1,173 @@
+.conteiner2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+    .conteiner-menu{
+        display: flex;
+        width: 81.42%;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+        
+    }
+    .navigation_menu{
+        display: flex;
+        width:100%;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        background: #FFFFFF;
+        .kitchen{
+            position: relative;
+        }
+        .kitchen2{
+            position: relative;
+        }
+        .point{
+            display: flex;
+            width: 5%;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            
+            
+            .point1{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #414141;
+                border-radius: 100%;
+                width: 2px;
+                height: 2px; 
+            }
+            .point2{
+                margin-top: 5px;
+                margin-bottom: 5px;
+            }
+        }
+        
+        li{
+            width: 12.45%;
+            list-style: none;
+            display: flex;
+            justify-content: center; 
+            align-items: center;
+            text-align: center;
+            
+            a{
+                display: flex;
+                width: 100%;
+                text-decoration: none;
+                color: #414141;
+                font-size: 14px;
+                line-height: 16px;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                @include adaptiv-font(14,10);
+                
+                img{
+                    padding-right: 10px;
+                    justify-content: center;
+                    align-items: center;
+                }
+                span{
+                    color: #D74444;
+                }
+            }
+        }
+    }
+
+    /*---dropdown-menu---*/
+        
+        .drop-down{
+            display: none;
+            width: 150%;
+            height: 432px;
+            flex-direction: column;
+            position: absolute;
+            top: 80px;
+            z-index: 3;
+            background: #FFFFFF;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.07);
+           
+            .drop-list{
+                display: flex;
+                width:95%;
+                flex-direction: column;
+                position: relative;
+                width: 80%;
+                margin: auto;
+                
+                li{
+                    display: flex;
+                    align-items: center;
+                   
+                }
+                
+                a{
+                    display: flex;
+                    justify-content: flex-start;
+                    text-align: left;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 16px;
+                    color: #414141;
+                    padding-bottom: 20px;
+                    @include adaptiv-font(14,10);
+                }
+            }
+        }
+        .kitchen:hover{
+            width: 12.45%;
+            height: 70px;
+            background: #245462;
+            a{
+                color: #FFFFFF;
+            }
+            
+            .drop-down{
+                display: flex;
+                margin-top: -12px;
+                li{
+                    width: 139px;
+                    text-align: left;
+                }
+                a{
+                    color: #414141;
+                }
+            }
+        
+        }
+        .kitchen2:hover{
+            width: 12.45%;
+            height: 70px;
+           
+            a{
+                color: #FFFFFF;
+            }
+            
+            .drop-down{
+                display: flex;
+                margin-top: -12px;
+                li{
+                    width: 139px;
+                    text-align: left;
+                }
+                a{
+                    color: #414141;
+                }
+            }
+        
+        }
+}

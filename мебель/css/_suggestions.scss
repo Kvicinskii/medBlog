@@ -1,0 +1,43 @@
+.conteiner_block{
+    width: 100%;
+    background-color:  #D7E8ED;
+    .suggestions{
+        width: 47.36%;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 15px;
+        .block{
+            text-align: center;
+            h4{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+                text-align: center;
+                letter-spacing: 0.015em;
+                color: #414141;
+                margin-bottom: 15px;
+                @include adaptiv-font(18,10);
+            }
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #686868;
+                margin-top: 15px;
+                margin-bottom: 65px;
+                @include adaptiv-font(16,10);
+            }
+            .line2{
+                width: 50px;
+                height: 1px;
+                background-color: #245462;
+                margin: auto;
+            }
+        }
+    }
+}
